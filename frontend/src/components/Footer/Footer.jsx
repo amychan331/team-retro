@@ -7,7 +7,7 @@ import classNames from "classnames";
 import { List, ListItem, withStyles } from "@material-ui/core";
 
 // @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
+import OfflineBoltOutlined from "@material-ui/icons/OfflineBoltOutlined";
 
 import footerStyle from "assets/jss/material-kit-react/components/footerStyle.jsx";
 
@@ -24,58 +24,18 @@ function Footer({ ...props }) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        <div className={classes.left}>
-          <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/"
-                className={classes.block}
-                target="_blank"
-              >
-                Creative Tim
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/presentation"
-                className={classes.block}
-                target="_blank"
-              >
-                About us
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.creative-tim.com/"
-                className={classes.block}
-                target="_blank"
-              >
-                Blog
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license"
-                className={classes.block}
-                target="_blank"
-              >
-                Licenses
-              </a>
-            </ListItem>
-          </List>
-        </div>
-        <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
-          <a
-            href="https://www.creative-tim.com"
-            className={aClasses}
-            target="_blank"
-          >
-            Creative Tim
-          </a>{" "}
-          for a better web.
-        </div>
+        &copy; {1900 + new Date().getYear()}, by{" "}
+        <a
+          href="https://devpost.com/software/team-retrofit"
+          className={aClasses}
+          target="_blank"
+        >
+          Team Retrofit
+        </a>,
+        {" "}<OfflineBoltOutlined className={classes.icon} />{" "}
+        powered
+        {" "}<OfflineBoltOutlined className={classes.icon} />{" "}
+        with desire to electrify home everywhere
       </div>
     </footer>
   );

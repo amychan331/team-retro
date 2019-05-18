@@ -31,7 +31,7 @@ class BenefitsSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
                 title="Free Chat"
-                description="Tell us about your home applications and learn ways to save money and energy."
+                description="Tell us about your home appliances and learn ways to save money and energy."
                 icon={Chat}
                 iconColor="info"
                 vertical
@@ -40,7 +40,7 @@ class BenefitsSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
                 title="Home Status"
-                description="Get information and resources tailored to your home applications and housing suitation, whether you are a homeowner, renter, landlord, or HOAs."
+                description="Get information and resources tailored to your home appliances and housing suitation, whether you are a homeowner, renter, landlord, or HOAs."
                 icon={Home}
                 iconColor="success"
                 vertical

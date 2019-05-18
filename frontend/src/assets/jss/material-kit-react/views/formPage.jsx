@@ -1,11 +1,12 @@
 import { container } from "assets/jss/material-kit-react.jsx";
 
-const signupPageStyle = {
+const formPageStyle = {
   container: {
     ...container,
     zIndex: "2",
     position: "relative",
     paddingTop: "20vh",
+    height: "auto",
     color: "#FFFFFF"
   },
   cardHidden: {
@@ -38,9 +39,8 @@ const signupPageStyle = {
       color: "#FFFFFF"
     },
     "& footer": {
-      position: "absolute",
       bottom: "0",
-      width: "100%"
+      padding: "0"
     }
   },
   form: {
@@ -87,4 +87,4 @@ const signupPageStyle = {
   }
 };
 
-export default signupPageStyle;
+export default formPageStyle;

@@ -1,7 +1,5 @@
 import { container } from "assets/jss/material-kit-react.jsx";
 
-import image from "assets/img/sign.jpg";
-
 const loginStyle = {
   section: {
     minHeight: "110vh",
@@ -13,8 +11,7 @@ const loginStyle = {
     margin: "0",
     border: "0",
     display: "flex",
-    alignItems: "center",
-    backgroundImage: "url(" + image + ")"
+    alignItems: "center"
   },
   container,
   form: {

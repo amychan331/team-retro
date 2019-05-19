@@ -6,7 +6,6 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
 import Chat from "@material-ui/icons/Chat";
-import Home from "@material-ui/icons/Home";
 // core components
 import Header from "components/Header/Header.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
@@ -14,18 +13,16 @@ import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import InfoArea from "components/InfoArea/InfoArea.jsx";
-import NavPills from "components/NavPills/NavPills.jsx";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
 
 import formPageStyle from "assets/jss/material-kit-react/views/formPage.jsx";
 
-import image from "assets/img/bg7.jpg";
+import image from "assets/img/appliances/BackgroundImage.png";
 
-class AppliancesPage extends React.Component {
+class AppliancesHome extends React.Component {
   constructor(props) {
     super(props);
     // we use this to make the card to appear after the page has been rendered
@@ -68,7 +65,7 @@ class AppliancesPage extends React.Component {
                   <form className={classes.form}>
                     <CardHeader color="primary" className={classes.cardHeader}>
                       <InfoArea icon={Chat} iconColor="white" vertical />
-                      <h4>Let's start with assessing your home appliances!</h4>
+                      <h4>Let's start with assessing your AppliancesHome appliances!</h4>
                     </CardHeader>
                     <CardBody>
                       <CustomInput
@@ -102,24 +99,6 @@ class AppliancesPage extends React.Component {
                         }}
                       />
                     </CardBody>
-                    <CardFooter className={classes.cardFooter}>
-                      <NavPills
-                        alignCenter
-                        color="primary"
-                        tabs={[
-                          {
-                            tabButton: "Homeowner",
-                            tabIcon: Home,
-                            href: "./homeowner"
-                          },
-                          {
-                            tabButton: "Renter",
-                            tabIcon: Home,
-                            href: "./renter"
-                          }
-                        ]}
-                      />
-                    </CardFooter>
                   </form>
                 </Card>
               </GridItem>
@@ -132,4 +111,4 @@ class AppliancesPage extends React.Component {
   }
 }
 
-export default withStyles(formPageStyle)(AppliancesPage);
+export default withStyles(formPageStyle)(AppliancesHome);
